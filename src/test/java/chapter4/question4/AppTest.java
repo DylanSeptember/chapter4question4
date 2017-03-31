@@ -50,6 +50,13 @@ public class AppTest
         Assert.assertEquals("once apon a time.....something else happaned",c.getStory2());
     }
 
+    @org.junit.Test
+    public void testChildStory_1()
+    {
+        Child c = new Child();
+
+        Assert.assertEquals("once apon a time.....something happened",c.getStory_1());
+    }
 
 
 }

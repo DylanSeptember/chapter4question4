@@ -29,10 +29,25 @@ class Parent
 class Child extends Parent
 {
     final private String story2 = "once apon a time.....something else happaned";
+    private String story_1 ;
+
+    Child()
+    {
+        setStory_1();
+    }
+
+    public void setStory_1()
+    {
+        story_1 = getStory();
+    }
 
     public String getStory2()
     {
         return (story2);
+    }
+    public String getStory_1()
+    {
+        return (story_1);
     }
 }
 
@@ -53,7 +68,7 @@ class GrandChild extends Child
 
     public void setStories()
     {
-        story[0] = getStory();
+        story[0] = getStory_1();
         story[1] = getStory2();
     }
 }
